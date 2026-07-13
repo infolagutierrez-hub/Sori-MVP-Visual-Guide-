@@ -772,6 +772,56 @@
         </svg>
       </div>
 
+      <!-- MODELO DE ACTIVACIÓN -->
+      <div style="background:#1A1A2E;border-radius:16px;padding:32px;margin-bottom:48px;">
+        <div style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#6366F1;margin-bottom:10px;">Cómo funciona el trigger</div>
+        <h3 style="font-size:20px;font-weight:800;color:#fff;margin-bottom:8px;">Sori no busca por cada contacto importado — busca cuando el operador lo pide</h3>
+        <p style="font-size:14px;color:#8888CC;line-height:1.7;margin-bottom:28px;max-width:700px;">El CSV crea la base de datos de contactos. La búsqueda de perfil e inteligencia de cierre solo se lanza cuando el operador escribe un comando específico para un prospecto concreto.</p>
+
+        <!-- TRIGGER FLOW -->
+        <div style="display:grid;grid-template-columns:1fr 32px 1fr 32px 1fr 32px 1fr;align-items:center;gap:0;">
+
+          <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:20px;">
+            <div style="font-size:20px;margin-bottom:10px;">📂</div>
+            <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#6366F1;margin-bottom:6px;">Paso 1</div>
+            <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:4px;">CSV upload</div>
+            <div style="font-size:12px;color:#8888CC;line-height:1.5;">El operador sube su cartera de contactos. Se crea la base de datos. <strong style="color:#BBBBCC;">No se lanza ninguna búsqueda.</strong></div>
+          </div>
+
+          <div style="text-align:center;font-size:20px;color:#3A3A5C;">→</div>
+
+          <div style="background:rgba(99,102,241,0.12);border:1px solid rgba(99,102,241,0.3);border-radius:12px;padding:20px;">
+            <div style="font-size:20px;margin-bottom:10px;">💬</div>
+            <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#A5B4FC;margin-bottom:6px;">Paso 2</div>
+            <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:4px;">Comando del operador</div>
+            <div style="font-size:12px;color:#C7D2FE;line-height:1.5;font-style:italic;">"Quiero hacer una propuesta de inversión de materias eléctricas para Julio Casas de ProMart"</div>
+          </div>
+
+          <div style="text-align:center;font-size:20px;color:#3A3A5C;">→</div>
+
+          <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:20px;">
+            <div style="font-size:20px;margin-bottom:10px;">🔍</div>
+            <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#6366F1;margin-bottom:6px;">Paso 3</div>
+            <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:4px;">Búsqueda en la base</div>
+            <div style="font-size:12px;color:#8888CC;line-height:1.5;">Sori busca "Julio Casas de ProMart" en la base de datos y recupera su ficha de contacto.</div>
+          </div>
+
+          <div style="text-align:center;font-size:20px;color:#3A3A5C;">→</div>
+
+          <div style="background:rgba(14,165,233,0.1);border:1px solid rgba(14,165,233,0.3);border-radius:12px;padding:20px;">
+            <div style="font-size:20px;margin-bottom:10px;">⚡</div>
+            <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#7DD3FC;margin-bottom:6px;">Paso 4</div>
+            <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:4px;">Profile Intelligence</div>
+            <div style="font-size:12px;color:#BAE6FD;line-height:1.5;">Solo aquí se lanza la búsqueda de perfil en LinkedIn + la estrategia de cierre personalizada.</div>
+          </div>
+
+        </div>
+
+        <div style="margin-top:20px;padding:14px 18px;background:rgba(52,211,153,0.08);border:1px solid rgba(52,211,153,0.2);border-radius:10px;font-size:13px;color:#6EE7B7;line-height:1.6;">
+          <strong style="color:#34D399;">Por qué importa:</strong> el sistema no consume créditos de API en cada importación. La búsqueda de perfil es cara y lenta — solo tiene sentido lanzarla cuando el operador va a hacer algo concreto con ese prospecto.
+        </div>
+      </div>
+
       <!-- CAPA DE EJECUCIÓN -->
       <div class="section-label" style="margin-bottom: 12px;">Capa de Ejecución</div>
       <div class="agents-grid" style="margin-bottom: 32px;">
