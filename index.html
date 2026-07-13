@@ -903,31 +903,49 @@
   <div style="background: #F5F5F7; min-height: calc(100vh - 180px);">
     <div class="section">
       <div class="section-label">Para quién se construye</div>
-      <div class="section-title">Target Personas — MVP1</div>
+      <div class="section-title">Target Personas — MVP1 → MVP2</div>
+
+      <!-- MVP PHASE BANNER -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px;">
+        <div style="background:#1A1A2E;border-radius:12px;padding:18px 22px;border-left:4px solid #34D399;">
+          <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#34D399;margin-bottom:6px;">MVP1 · Single tenant</div>
+          <div style="font-size:15px;font-weight:800;color:#fff;margin-bottom:4px;">1 usuario — el inversor</div>
+          <div style="font-size:13px;color:#8888CC;line-height:1.6;">Fase de test y validación. Solo el inversor usa el producto. Interfaz: web (chat + Kanban). Objetivo: validar que el sistema funciona antes de abrirlo a clientes.</div>
+        </div>
+        <div style="background:#1A1A2E;border-radius:12px;padding:18px 22px;border-left:4px solid #6366F1;">
+          <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#A5B4FC;margin-bottom:6px;">MVP2 · Multi-tenant</div>
+          <div style="font-size:15px;font-weight:800;color:#fff;margin-bottom:4px;">Cartera de clientes inicial</div>
+          <div style="font-size:13px;color:#8888CC;line-height:1.6;">El inversor activa Sori para sus clientes. Cada cliente es un tenant. El canal principal para ellos es WhatsApp — no la web. La web existe pero no es su punto de entrada.</div>
+        </div>
+      </div>
 
       <div class="persona-framing">
-        <strong>MVP1 está enfocado en un único caso de uso central:</strong> gestión de contactos, investigación de prospectos y cierre de deals para profesionales de inversión y consultores. El sistema trabaja con la cartera existente del operador importada vía CSV. La búsqueda externa de leads es una funcionalidad de MVP2.
+        <strong>El usuario final de MVP2 no es el inversor — son sus clientes.</strong> Profesionales seniors con alta capacidad de decisión y bajo acercamiento a la tecnología. El inversor valida el sistema en MVP1; en MVP2 lo despliega sobre su cartera. La interfaz que determina si el producto funciona para ellos es el bot de WhatsApp — no el dashboard.
       </div>
 
       <!-- PERFIL TECNOLÓGICO -->
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:40px;">
 
-        <div style="background:white;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border-left:4px solid #6366F1;">
-          <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#6366F1;margin-bottom:12px;">Perfil tecnológico del usuario</div>
+        <div style="background:white;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border-left:4px solid #DC2626;">
+          <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#DC2626;margin-bottom:12px;">Perfil tecnológico del usuario final (MVP2)</div>
           <h3 style="font-size:17px;font-weight:800;color:#1A1A2E;margin-bottom:10px;line-height:1.3;">Bajo acercamiento a la tecnología</h3>
-          <p style="font-size:13px;color:#555;line-height:1.7;margin-bottom:16px;">Los tres perfiles son profesionales seniors con alta capacidad de decisión pero poco interés — o paciencia — para aprender interfaces complejas. No son early adopters de tecnología. Entienden el valor del producto, pero necesitan que el producto se adapte a ellos, no al revés.</p>
+          <p style="font-size:13px;color:#555;line-height:1.7;margin-bottom:16px;">Profesionales seniors — inversores, consultores, advisors — con alta capacidad de decisión pero sin tiempo ni interés en aprender interfaces nuevas. WhatsApp ya es su herramienta de comunicación principal para todo. No cambian de hábito: Sori se adapta a donde ya están.</p>
           <div style="display:flex;flex-direction:column;gap:8px;">
             <div style="display:flex;align-items:flex-start;gap:10px;">
               <span style="color:#DC2626;font-weight:700;flex-shrink:0;">✕</span>
-              <span style="font-size:13px;color:#555;">No quieren aprender dashboards ni flujos de navegación</span>
+              <span style="font-size:13px;color:#555;">No van a abrir un dashboard nuevo</span>
             </div>
             <div style="display:flex;align-items:flex-start;gap:10px;">
               <span style="color:#DC2626;font-weight:700;flex-shrink:0;">✕</span>
-              <span style="font-size:13px;color:#555;">No leen documentación ni tutoriales</span>
+              <span style="font-size:13px;color:#555;">No van a aprender navegación ni flujos</span>
             </div>
             <div style="display:flex;align-items:flex-start;gap:10px;">
               <span style="color:#DC2626;font-weight:700;flex-shrink:0;">✕</span>
               <span style="font-size:13px;color:#555;">Si hay fricción en el primer uso, no vuelven</span>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;margin-top:4px;">
+              <span style="color:#16A34A;font-weight:700;flex-shrink:0;">✓</span>
+              <span style="font-size:13px;color:#555;">WhatsApp lo usan todo el día, para todo — ya es su asistente virtual</span>
             </div>
           </div>
         </div>
@@ -937,22 +955,18 @@
           <div style="background:#F8F8FB;border-radius:14px;padding:22px;border:1px solid #EBEBF5;border-left:4px solid #8888CC;">
             <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
               <span style="font-size:20px;">🖥️</span>
-              <div>
-                <div style="font-size:12px;font-weight:700;color:#3730A3;letter-spacing:1px;text-transform:uppercase;">Web — Deliverable, no interfaz</div>
-              </div>
+              <div style="font-size:12px;font-weight:700;color:#3730A3;letter-spacing:1px;text-transform:uppercase;">Web — Deliverable, no interfaz de usuario</div>
             </div>
-            <p style="font-size:13px;color:#555;line-height:1.6;">El dashboard web puede mantener cierta complejidad porque <strong style="color:#1A1A2E;">el usuario no lo va a operar</strong> — es una pieza de visibilidad del proceso. Un buen deliverable para mostrar transparencia y auditar el flujo. Útil para demos e inversores.</p>
+            <p style="font-size:13px;color:#555;line-height:1.6;">El dashboard web puede mantener cierta complejidad porque <strong style="color:#1A1A2E;">el cliente final no lo va a operar</strong>. Es una capa de visibilidad del proceso — útil para el inversor, para demos y para auditar el flujo. Buen deliverable. No es el producto para el usuario final.</p>
           </div>
 
-          <div style="background:#1A1A2E;border-radius:14px;padding:22px;border-left:4px solid #6366F1;">
+          <div style="background:#075E54;border-radius:14px;padding:22px;border-left:4px solid #25D366;">
             <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-              <span style="font-size:20px;">🎙️</span>
-              <div>
-                <div style="font-size:12px;font-weight:700;color:#A5B4FC;letter-spacing:1px;text-transform:uppercase;">Voz — La interfaz real · MVP2 crítico</div>
-              </div>
+              <span style="font-size:20px;">💬</span>
+              <div style="font-size:12px;font-weight:700;color:#25D366;letter-spacing:1px;text-transform:uppercase;">WhatsApp — La interfaz real · MVP2 crítico</div>
             </div>
-            <p style="font-size:13px;color:#BBBBCC;line-height:1.6;">El bot de voz es la única interfaz que este usuario puede adoptar sin fricción. <strong style="color:#fff;">Habla con el bot como hablaría con un asistente humano.</strong> La complejidad del sistema desaparece detrás de una sola máscara conversacional. Sin formularios, sin navegación, sin aprendizaje.</p>
-            <div style="margin-top:12px;padding:10px 14px;background:rgba(99,102,241,0.15);border-radius:8px;font-size:12px;color:#C7D2FE;font-style:italic;line-height:1.6;">"Quiero hacer una propuesta para Julio Casas de ProMart sobre materias eléctricas" → Sori hace todo lo demás.</div>
+            <p style="font-size:13px;color:#d4edda;line-height:1.6;">El bot de WhatsApp es la única interfaz que este perfil puede adoptar sin fricción porque <strong style="color:#fff;">ya viven ahí</strong>. No hay que instalar nada, no hay login, no hay aprendizaje. Le escriben al bot como le escribirían a un asistente humano — y Sori hace todo lo demás detrás de la máscara.</p>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(37,211,102,0.12);border-radius:8px;font-size:12px;color:#b7f5c8;font-style:italic;line-height:1.6;">"Quiero hacer una propuesta para Julio Casas de ProMart sobre materias eléctricas" → Sori encuentra el contacto, lanza el perfil y entrega la estrategia.</div>
           </div>
 
         </div>
